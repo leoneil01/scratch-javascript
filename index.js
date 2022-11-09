@@ -20,8 +20,12 @@ const todos = [
     }
 ];
 
-let i = 0;
-while(i < todos.length) {
-    console.log(`while loop: ${todos[i].text}`);
-    i++;
+// traditional way
+for(let i = 0; i < todos.length; i++) {
+    console.log(`for loop: ${todos[i].text}`);
+}
+
+// new way (cleaner, readable)
+for(let todo of todos) {
+    console.log(`for loop: ${todo.isCompleted}`);
 }
