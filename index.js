@@ -20,12 +20,13 @@ const todos = [
     }
 ];
 
-// traditional way
-for(let i = 0; i < todos.length; i++) {
-    console.log(`for loop: ${todos[i].text}`);
-}
+// foreach
+todos.forEach(function(todo) {
+    console.log(todo.id);
+});
 
-// new way (cleaner, readable)
-for(let todo of todos) {
-    console.log(`for loop: ${todo.isCompleted}`);
-}
+// map
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+console.log(todoText);
