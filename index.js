@@ -20,13 +20,8 @@ const todos = [
     }
 ];
 
-// foreach
-todos.forEach(function(todo) {
-    console.log(todo.id);
+// filter
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted === true;
 });
-
-// map
-const todoText = todos.map(function(todo) {
-    return todo.text;
-});
-console.log(todoText);
+console.log(todoCompleted);
