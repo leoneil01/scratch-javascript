@@ -1,10 +1,5 @@
-const x = 10
-const y = 15;
+const x = 10;
 
-if(x > 8 || y > 10) {
-    console.log('x is greater than 8 or y is greater than 10')
-}
+const y = x > 15 ? 'x is greater than 15' : 'x is less than 15';
 
-if(x > 8 && y > 10) {
-    console.log('x is greater than 8 and y is greater than 10')
-}
+console.log(y);
