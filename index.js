@@ -1,5 +1,5 @@
-const x = 10;
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
 
-const y = x > 15 ? 'x is greater than 15' : 'x is less than 15';
-
-console.log(y);
+addNumbers(8, 9);
