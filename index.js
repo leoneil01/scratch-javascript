@@ -1,10 +1,13 @@
-function addNumber1(num1, num2) {
-    console.log(num1 + num2);
-}
-addNumber1(4,5);
-
-function addNumber2(num1, num2) {
-    return num1 + num2;
+// Constructor function
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob; // date of birth
 }
 
-console.log(addNumber2(8, 9));
+// Instantiate object
+const person1 = new Person( 'Leoneil', 'Odrunia', '6-21-2001' );
+const person2 = new Person( 'Mike', 'Ross', '12-24-1989' );
+
+console.log(person1);
+console.log(person2.dob); //getting the date of birth
