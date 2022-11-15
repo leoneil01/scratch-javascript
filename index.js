@@ -1,18 +1,19 @@
-// Constructor function
-function Person(firstName, lastName, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob); // date of birth
-}
-
-// Prototype: has the ability to hide the method function (also properties)
-Person.prototype.getBirthYear = function() {
-    return this.dob.getFullYear();
-}
-
-Person.prototype.getFullName = function() {
-    return `${this.firstName} ${this.lastName}`;
-}
+// Class
+class Person {
+	constructor(firstName, lastName, dob) {
+    	this.firstName = firstName;
+    	this.lastName = lastName;
+    	this.dob = new Date(dob); // date of birth
+	}
+	
+	getBirthYear() {
+    	return this.dob.getFullYear();
+	}
+	
+	getFullName() {
+    	return `${this.firstName} ${this.lastName}`;
+	}
+} // syntactic sugar (same program that constructor function does)
 
 // Instantiate object
 const person1 = new Person( 'Leoneil', 'Odrunia', '6-21-2001' );
